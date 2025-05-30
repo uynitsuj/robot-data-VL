@@ -19,7 +19,7 @@ import time
 
 def main(
     server_args: ServerArgs,
-    video_path: str = "top_camera-images-rgb_low_res.mp4",
+    video_path: str = "scripts/top_camera-images-rgb_low_res.mp4",
     stereo: bool = False,
 ):
     vlm = sgl.Engine(**dataclasses.asdict(server_args))
@@ -31,6 +31,7 @@ def main(
     while True:
         ret, frame = video_capture.read()
         if not ret:
+            print("Read video failed, check video path")
             break
 
         prompt = f"{image_token}\n What is in the image?" 

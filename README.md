@@ -1,3 +1,4 @@
+Steps to reproduce
 ```
 git clone https://github.com/uynitsuj/robot-data-VL.git
 cd robot-data-VL
@@ -12,6 +13,6 @@ pip install -e .
 cd ../sglang
 pip install -e "python[all]"
 cd ../..
+pip install opencv-python
 python scripts/example_infer_robot_data.py --model-path deepseek-ai/deepseek-vl2-tiny
 ```
-
