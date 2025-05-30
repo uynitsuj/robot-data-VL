@@ -1,0 +1,7 @@
+[submodule "dep/DeepSeek-VL2"]
+	path = dep/DeepSeek-VL2
+	url = https://github.com/uynitsuj/DeepSeek-VL2.git
+
+[submodule "dep/sglang"]
+	path = dep/sglang
+	url = https://github.com/uynitsuj/sglang.git
